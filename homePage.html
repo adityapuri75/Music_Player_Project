@@ -1,254 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
-    <link rel="stylesheet" href="homePageStyle.css">
-    <script src="https://kit.fontawesome.com/86f0e8ef70.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav>
-            <ul>
-                <li><img src="assets/logo1.png" alt=""></li>
-                <li id="fav"><a href="#">Favourites</a></li>
-            </ul>
+    <link rel="stylesheet" href="homePageStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/86f0e8ef70.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-            <ul>
-                <li class="search-box">
-                        <ul>
-                            <li id="s1"><i class="fas fa-search"></i></li>
-                            <li id="s1"><h4>Search</h4></li>
-                            <li id="s2"><i class="fas fa-microphone"></i></li>
-                        </ul>
-                        <!-- <ul>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="assets/logo1.png" alt="" /></li>
+        <li id="fav"><a href="#">Favourites</a></li>
+      </ul>
+
+      <ul>
+        <li class="search-box">
+          <ul>
+            <li id="s1"><i class="fas fa-search"></i></li>
+            <li id="s1">
+              <h4>Search</h4>
+            </li>
+            <li id="s2"><i class="fas fa-microphone"></i></li>
+          </ul>
+          <!-- <ul>
                             <li><i class="fas fa-microphone"></i></li>
                         </ul> -->
-                </li>
-                <li class="bell-icon"><i class="far fa-bell"></i></li>
-                <li class="profile-logo">
-                    <div><img src="https://th.bing.com/th/id/OIP.9V5AeVZz4QPvSb_9IrFCPwHaFj?pid=ImgDet&rs=1" alt=""></div>
-                </li>
-            </ul>
+        </li>
+        <li class="bell-icon"><i class="far fa-bell"></i></li>
+        <li class="profile-logo">
+          <div>
+            <img
+              src="https://th.bing.com/th/id/OIP.9V5AeVZz4QPvSb_9IrFCPwHaFj?pid=ImgDet&rs=1"
+              alt=""
+            />
+          </div>
+        </li>
+      </ul>
     </nav>
     <section id="blur"></section>
- <main id="main">
-        <!-- main -->
-       <section id="left">
-       <h1 id="heading">Latest Release</h1>
-       <section id="grid-1">
-       <div class="grid-box">
-         <ul>
-             <li><img src="https://i.cbc.ca/1.4678126.1527269930!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/shawn-mendes.jpg" alt=""></li>
-             <li>
-                 <ul id="grid-des">
-                     <li>Onism</li>
-                     <li>AUG 11,2017</li>
-                 </ul>
-             </li>
-         </ul>
-         <ul>
-             <li><i class="fas fa-ellipsis-h"></i></li>
-             <li>4:44</li>
-         </ul>
-       </div>
-       <div class="grid-box">
-        <ul>
-            <li><img src="https://www.gannett-cdn.com/presto/2021/03/18/PIND/81c53026-e263-45dd-9c7a-1541d67c398d-bieber_album_cover.jpg" alt=""></li>
-            <li>
+    <main id="main">
+      <!-- main -->
+      <section id="left">
+        <h1 id="heading">Latest Release</h1>
+        <section id="grid-1">
+          <div class="grid-box">
+            <ul>
+              <li>
+                <img
+                  src="https://i.cbc.ca/1.4678126.1527269930!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/shawn-mendes.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
                 <ul id="grid-des">
-                    <li>Onism</li>
-                    <li>AUG 11,2017</li>
+                  <li>Onism</li>
+                  <li>AUG 11,2017</li>
                 </ul>
-            </li>
-        </ul>
-        <ul>
-            <li><i class="fas fa-ellipsis-h"></i></li>
-            <li>4:44</li>
-        </ul>
-      </div>
-      <div class="grid-box">
-        <ul>
-            <li><img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png" alt=""></li>
-            <li>
+              </li>
+            </ul>
+            <ul>
+              <li><i class="fas fa-ellipsis-h"></i></li>
+              <li>4:44</li>
+            </ul>
+          </div>
+          <div class="grid-box">
+            <ul>
+              <li>
+                <img
+                  src="https://www.gannett-cdn.com/presto/2021/03/18/PIND/81c53026-e263-45dd-9c7a-1541d67c398d-bieber_album_cover.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
                 <ul id="grid-des">
-                    <li>Onism</li>
-                    <li>AUG 11,2017</li>
+                  <li>Onism</li>
+                  <li>AUG 11,2017</li>
                 </ul>
-            </li>
-        </ul>
-        <ul>
-            <li><i class="fas fa-ellipsis-h"></i></li>
-            <li>4:44</li>
-        </ul>
-      </div>
-      <div class="grid-box">
-        <ul>
-            <li><img src="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b2/Olivia_Rodrigo_-_SOUR.png/274px-Olivia_Rodrigo_-_SOUR.png" alt=""></li>
-            <li>
+              </li>
+            </ul>
+            <ul>
+              <li><i class="fas fa-ellipsis-h"></i></li>
+              <li>4:44</li>
+            </ul>
+          </div>
+          <div class="grid-box">
+            <ul>
+              <li>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png"
+                  alt=""
+                />
+              </li>
+              <li>
                 <ul id="grid-des">
-                    <li>Onism</li>
-                    <li>AUG 11,2017</li>
+                  <li>Onism</li>
+                  <li>AUG 11,2017</li>
                 </ul>
-            </li>
-        </ul>
-        <ul>
-            <li><i class="fas fa-ellipsis-h"></i></li>
-            <li>4:44</li>
-        </ul>
-      </div>
-       </section>
+              </li>
+            </ul>
+            <ul>
+              <li><i class="fas fa-ellipsis-h"></i></li>
+              <li>4:44</li>
+            </ul>
+          </div>
+          <div class="grid-box">
+            <ul>
+              <li>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b2/Olivia_Rodrigo_-_SOUR.png/274px-Olivia_Rodrigo_-_SOUR.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <ul id="grid-des">
+                  <li>Onism</li>
+                  <li>AUG 11,2017</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li><i class="fas fa-ellipsis-h"></i></li>
+              <li>4:44</li>
+            </ul>
+          </div>
+        </section>
 
-
-       <h1 id="heading">Popular Artists</h1>
-       <section id="popular-artists">
-        <ul>
-            <li><img src="https://i.scdn.co/image/ab6761610000e5eb12a2ef08d00dd7451a6dbed6" alt=""></li>
+        <h1 id="heading">Popular Artists</h1>
+        <section id="popular-artists">
+          <ul>
+            <li>
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5eb12a2ef08d00dd7451a6dbed6"
+                alt=""
+              />
+            </li>
             <li>Ed Sheeran</li>
-        </ul>
-        <ul>
-            <li><img src="https://media.newyorker.com/photos/5b16cfe87018915289e3cb28/master/pass/StFelix-Charlie-Puth.jpg" alt=""></li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="https://media.newyorker.com/photos/5b16cfe87018915289e3cb28/master/pass/StFelix-Charlie-Puth.jpg"
+                alt=""
+              />
+            </li>
             <li>Charlie Puth</li>
-        </ul>
-        <ul>
-            <li><img src="https://i.scdn.co/image/ab6761610000e5eb4a61c7615c8125e832ffc32c" alt=""></li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5eb4a61c7615c8125e832ffc32c"
+                alt=""
+              />
+            </li>
             <li>Adam Levine</li>
-        </ul>
-        <ul>
-            <li><img src="https://static01.nyt.com/images/2020/11/18/arts/16taylor-masters/merlin_179096598_efc4232d-7251-4c29-b1c3-b4c4fb4d22fb-mediumSquareAt3X.jpg" alt=""></li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="https://static01.nyt.com/images/2020/11/18/arts/16taylor-masters/merlin_179096598_efc4232d-7251-4c29-b1c3-b4c4fb4d22fb-mediumSquareAt3X.jpg"
+                alt=""
+              />
+            </li>
             <li>Taylor Swift</li>
-        </ul>
-        <ul>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoOhFBHa4o4BpbblLzDXZ72WQFOmc8pHq7RsbhNnsF_iDD2cXBVUi_8ufy55cLEBaFmE&usqp=CAU" alt=""></li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoOhFBHa4o4BpbblLzDXZ72WQFOmc8pHq7RsbhNnsF_iDD2cXBVUi_8ufy55cLEBaFmE&usqp=CAU"
+                alt=""
+              />
+            </li>
             <li>Bruno Mars</li>
-        </ul>
-        <ul>
-            <li><img src="https://cdn.britannica.com/79/188779-050-B584358F/Coldplay-Chris-Martin-Will-Champion-Guy-Berryman-2009.jpg" alt=""></li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="https://cdn.britannica.com/79/188779-050-B584358F/Coldplay-Chris-Martin-Will-Champion-Guy-Berryman-2009.jpg"
+                alt=""
+              />
+            </li>
             <li>Coldplay</li>
-        </ul>
-       </section>
-       </section>
+          </ul>
+        </section>
 
-        <!-- sidebar -->
-       <section id="right">
-       <div id="sidebar-top">
-        <h1>Queue</h1>
-        <ul>
+        <section id="music-type">
+          <img src="assets/new-english-2.jpg" alt="" />
+
+          <div class="container-music">
+            <div class="blurredPhoto">
+              <img src="assets/genre-3.jpg" alt="" />
+            </div>
+            <div class="text">Retro</div>
+          </div>
+          <div class="container-music">
+            <div class="blurredPhoto">
+              <img src="assets/latest-release-1.jpg" alt="" />
+            </div>
+            <div class="text">Retro</div>
+          </div>
+          <div class="container-music">
+            <div class="blurredPhoto">
+              <img src="assets/latest-release-2.png" alt="" />
+            </div>
+            <div class="text">Retro</div>
+          </div>
+          <div class="container-music">
+            <div class="blurredPhoto">
+              <img
+                src="https://image.shutterstock.com/image-photo/vintage-audio-cassette-loose-tape-260nw-191838512.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text">Love</div>
+          </div>
+          <div class="container-music">
+            <div class="blurredPhoto">
+              <img src="assets/playlist-1.png" alt="" />
+            </div>
+            <div class="text">Retro</div>
+          </div>
+          <div class="container-music">
+            <div class="blurredPhoto">
+              <img src="assets/playlist-2.jpg" alt="" />
+            </div>
+            <div class="text">Retro</div>
+          </div>
+        </section>
+
+        <section id="music-type-2">
+          <div class="content">
+            <h1>Party</h1>
+            <div id="image-t">
+              <img
+                class="bg"
+                src="https://static.toiimg.com/photo/73045588.cms"
+                alt="background image"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <h1>Electronic</h1>
+            <div id="image-t">
+              <img
+                class="bg"
+                src="https://www.recordingconnection.com/blog/wp-content/uploads/2019/05/recording-connection-make-electronic-music-for-a-living.jpg"
+                alt="background image"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <h1>Road Trip</h1>
+            <div id="image-t">
+              <img
+                class="bg"
+                src="http://travelinsidermagazine.com/wp-content/uploads/2020/06/best-time-to-go-on-a-road-trip.jpg"
+                alt="background image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- latest english -->
+
+        <h1 id="heading" style="margin-top: 40px; margin-left: 0px">
+          Latest English
+        </h1>
+        <section class="latest">
+
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjDGRQTj3djOGDxsbtixZNU2LGb7IQms4U_EOFhU&usqp=CAE&s"
+              alt=""
+            />
+            <h4>Onism</h4>
+            <h4>Aug 11, 2017</h4>
+          </div>
+          <div>
+            <img
+              src="https://i.cbc.ca/1.4678126.1527269930!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/shawn-mendes.jpg"
+              alt=""
+            />
+            <h4>Onism</h4>
+            <h4>Aug 11, 2017</h4>
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoOhFBHa4o4BpbblLzDXZ72WQFOmc8pHq7RsbhNnsF_iDD2cXBVUi_8ufy55cLEBaFmE&usqp=CAU"
+              alt=""
+            />
+            <h4>Onism</h4>
+            <h4>Aug 11, 2017</h4>
+          </div>
+          <div>
+            <img
+              src="https://www.gannett-cdn.com/presto/2021/03/18/PIND/81c53026-e263-45dd-9c7a-1541d67c398d-bieber_album_cover.jpg"
+              alt=""
+            />
+            <h4>Onism</h4>
+            <h4>Aug 11, 2017</h4>
+          </div>
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png"
+              alt=""
+            />
+            <h4>Onism</h4>
+            <h4>Aug 11, 2017</h4>
+          </div>
+          <div>
+            <img
+              src="https://static01.nyt.com/images/2020/11/18/arts/16taylor-masters/merlin_179096598_efc4232d-7251-4c29-b1c3-b4c4fb4d22fb-mediumSquareAt3X.jpg"
+              alt=""
+            />
+            <h4>Onism</h4>
+            <h4>Aug 11, 2017</h4>
+          </div>
+        
+        </section>
+
+        <h1 id="heading" style="margin-top: 40px; margin-left: 0px">
+            Latest Hindi
+          </h1>
+
+          <section class="latest">
+
+            <div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273a75c2f26913099a420050f01"
+                alt=""
+              />
+              <h4>Onism</h4>
+              <h4>Aug 11, 2017</h4>
+            </div>
+            <div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273c439bb00ab53ff82d8622064"
+                alt=""
+              />
+              <h4>Onism</h4>
+              <h4>Aug 11, 2017</h4>
+            </div>
+            <div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273173a36a54fd89a650240ceac"
+                alt=""
+              />
+              <h4>Onism</h4>
+              <h4>Aug 11, 2017</h4>
+            </div>
+            <div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273271cc4bcc2e583aac3131541"
+                alt=""
+              />
+              <h4>Onism</h4>
+              <h4>Aug 11, 2017</h4>
+            </div>
+            <div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273ab827cdec4b3fc1b02bfdb1e"
+                alt=""
+              />
+              <h4>Onism</h4>
+              <h4>Aug 11, 2017</h4>
+            </div>
+            <div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273a34e041f770081b2ab716f40"
+                alt=""
+              />
+              <h4>Onism</h4>
+              <h4>Aug 11, 2017</h4>
+            </div>
+          
+          </section>
+
+      </section>
+
+      <!-- sidebar -->
+      <section id="right">
+        <div id="sidebar-top">
+          <h1>Queue</h1>
+          <ul>
             <li>Queue</li>
             <li><i class="fa fa-angle-up" aria-hidden="true"></i></li>
-        </ul>
-       </div>
-       <!-- music bar -->
-       <div class="music-bar">
-       <ul>
-           <li>01</li>
-           <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjDGRQTj3djOGDxsbtixZNU2LGb7IQms4U_EOFhU&usqp=CAE&s" alt=""></div>
-           <li>
-            <h3>Sour</h3>
-            <h5>Olivia Rodrigo</h5>
-           </li>
-       </ul>
-       <i class="far fa-heart"></i>
-       </div>
-
-       <div class="music-bar">
-        <ul>
-            <li><i class="fas fa-play"></i></li>
-            <div><img src="https://upload.wikimedia.org/wikipedia/pt/e/e8/Happier_Than_Ever_%28%C3%A1lbum%29_-_Billie_Eilish.png" alt=""></div>
+          </ul>
+        </div>
+        <!-- music bar -->
+        <div class="music-bar">
+          <ul>
+            <li>01</li>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjDGRQTj3djOGDxsbtixZNU2LGb7IQms4U_EOFhU&usqp=CAE&s"
+                alt=""
+              />
+            </div>
             <li>
-             <h3>Happier Than ...</h3>
-             <h5>Billie Eilish</h5>
+              <h3>Sour</h3>
+              <h5>Olivia Rodrigo</h5>
             </li>
-        </ul>
-        <i class="far fa-heart" style="color:red;"></i>
+          </ul>
+          <i class="far fa-heart"></i>
         </div>
 
         <div class="music-bar">
-            <ul>
-                <li>03</li>
-                <div><img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png" alt=""></div>
-                <li>
-                 <h3>After Hours</h3>
-                 <h5>The Weeknd</h5>
-                </li>
-            </ul>
-            <i class="far fa-heart"></i>
+          <ul>
+            <li><i class="fas fa-play"></i></li>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/pt/e/e8/Happier_Than_Ever_%28%C3%A1lbum%29_-_Billie_Eilish.png"
+                alt=""
+              />
             </div>
+            <li>
+              <h3>Happier Than ...</h3>
+              <h5>Billie Eilish</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart" style="color: red"></i>
+        </div>
 
-            <div class="music-bar">
-                <ul>
-                    <li>04</li>
-                    <div><img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Harry_Styles_-_Fine_Line.png" alt=""></div>
-                    <li>
-                     <h3>Fine Line</h3>
-                     <h5>Harry Styles</h5>
-                    </li>
-                </ul>
-                <i class="far fa-heart"></i>
-                </div>
+        <div class="music-bar">
+          <ul>
+            <li>03</li>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>After Hours</h3>
+              <h5>The Weeknd</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
 
-                <div class="music-bar">
-                    <ul>
-                        <li>05</li>
-                        <div><img src="https://i.pinimg.com/originals/3a/f0/e5/3af0e55ea66ea69e35145fb108b4a636.jpg" alt=""></div>
-                        <li>
-                         <h3>Starboy</h3>
-                         <h5>The Weeknd</h5>
-                        </li>
-                    </ul>
-                    <i class="far fa-heart"></i>
-                    </div>
+        <div class="music-bar">
+          <ul>
+            <li>04</li>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/b/b1/Harry_Styles_-_Fine_Line.png"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>Fine Line</h3>
+              <h5>Harry Styles</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
 
-                    <div class="music-bar">
-                        <ul>
-                            <li>06</li>
-                            <div><img src="https://i1.sndcdn.com/artworks-000146224300-llz84v-t240x240.jpg" alt=""></div>
-                            <li>
-                             <h3>Mirage</h3>
-                             <h5>Else</h5>
-                            </li>
-                        </ul>
-                        <i class="far fa-heart"></i>
-                        </div>
+        <div class="music-bar">
+          <ul>
+            <li>05</li>
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/3a/f0/e5/3af0e55ea66ea69e35145fb108b4a636.jpg"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>Starboy</h3>
+              <h5>The Weeknd</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
 
-                        <div class="music-bar">
-                            <ul>
-                                <li>07</li>
-                                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6t-YN_iTwO8i7Qvun6ClU26VTUSmz7ZBoY6KgiCQfUxsZSBa9_Tnf5OmZ3y89gZAkGKg&usqp=CAU" alt=""></div>
-                                <li>
-                                 <h3>Mirage</h3>
-                                 <h5>Else</h5>
-                                </li>
-                            </ul>
-                            <i class="far fa-heart"></i>
-                            </div>
+        <div class="music-bar">
+          <ul>
+            <li>06</li>
+            <div>
+              <img
+                src="https://i1.sndcdn.com/artworks-000146224300-llz84v-t240x240.jpg"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>Mirage</h3>
+              <h5>Else</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
 
-                            <div class="music-bar">
-                                <ul>
-                                    <li>08</li>
-                                    <div><img src="https://i1.sndcdn.com/artworks-fspAiShXNMZNBmwJ-5Grv5A-t500x500.jpg" alt=""></div>
-                                    <li>
-                                     <h3>Mirage</h3>
-                                     <h5>Else</h5>
-                                    </li>
-                                </ul>
-                                <i class="far fa-heart"></i>
-                                </div>
+        <div class="music-bar">
+          <ul>
+            <li>07</li>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6t-YN_iTwO8i7Qvun6ClU26VTUSmz7ZBoY6KgiCQfUxsZSBa9_Tnf5OmZ3y89gZAkGKg&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>Mirage</h3>
+              <h5>Else</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
 
-                                <div class="music-bar">
-                                    <ul>
-                                        <li>09</li>
-                                        <div><img src="https://i1.sndcdn.com/artworks-8VKO5y8g104XcBvw-qz98dw-t500x500.jpg" alt=""></div>
-                                        <li>
-                                         <h3>Mirage</h3>
-                                         <h5>Else</h5>
-                                        </li>
-                                    </ul>
-                                    <i class="far fa-heart"></i>
-                                    </div>
+        <div class="music-bar">
+          <ul>
+            <li>08</li>
+            <div>
+              <img
+                src="https://i1.sndcdn.com/artworks-fspAiShXNMZNBmwJ-5Grv5A-t500x500.jpg"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>Mirage</h3>
+              <h5>Else</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
 
-       </section>
+        <div class="music-bar">
+          <ul>
+            <li>09</li>
+            <div>
+              <img
+                src="https://i1.sndcdn.com/artworks-8VKO5y8g104XcBvw-qz98dw-t500x500.jpg"
+                alt=""
+              />
+            </div>
+            <li>
+              <h3>Mirage</h3>
+              <h5>Else</h5>
+            </li>
+          </ul>
+          <i class="far fa-heart"></i>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

@@ -23,6 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 500;
 
 }
 
@@ -33,6 +34,7 @@ nav{
     height: 20px;
     position: fixed;
     top: 100px;
+    z-index: 500;
 }
 
 nav ul:nth-of-type(1) li{
@@ -144,7 +146,7 @@ main{
      margin-right: 10px;
      /* height: 2000px; */
      width: 60vw;
-     border: 2px solid white;
+     /* border: 2px solid white; */
  }
 
  #heading{
@@ -156,6 +158,11 @@ main{
      display: grid;
      grid-template-columns: repeat(2,1fr);
  }
+
+
+
+
+
  .grid-box{
      margin: 30px;
      width: 25vw;
@@ -197,6 +204,7 @@ main{
      color: white;
  }
 
+ 
 
  /* popular artists */
 
@@ -204,7 +212,7 @@ main{
    margin-top: 10px;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   /* justify-content: center; */
  }
 
  #popular-artists ul{
@@ -224,6 +232,120 @@ main{
     color: white;
  }
 
+ /* music type */
+
+ #music-type{
+     /* height: 150px; */
+     padding-top: 30px;
+     padding-bottom: 30px;
+     background-color: #101743;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     margin-top: 50px;
+ }
+ #music-type img{
+     width: 110px;
+     height: 110px;
+     margin-left: 25px;
+ }
+
+ .container-music {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    margin: 7px;
+} 
+
+.blurredPhoto img {
+    position: absolute;
+    width: 90px;
+     height: 90px;
+     margin-left: 35px;
+     border-radius: 100%;
+     filter: blur(0.8px);
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+  left: 50%;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+/* music type 2 */
+
+
+#music-type-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.content {
+    padding-top: 20px;
+    position: relative;
+    /* border: 1px solid red; */
+    display: inline-block;
+  }
+  
+  /* #image-t{
+      position: relative;
+      height: 100px;
+      width: 200px;
+  } */
+  .content h1 {
+    color: #FFF;
+    margin: 0;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .bg{
+    height: 150px;
+    width: 270px;
+    object-fit: cover;
+}
+  
+  .bg:hover, h1:hover + .bg {
+    transform: scale(1.05);
+    transition: all 10s;
+    transition: ease-in
+  }
+
+
+  /* latest */
+
+  .latest{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .latest img{
+      margin-top: 20px;
+      border-radius: 5px;
+      height: 140px;
+      width: 140px;
+      object-fit: cover;
+  }
+  .latest h4:nth-of-type(1){
+      margin-top: 10px;
+      color: white;
+      font-size: 1rem;
+  }
+  .latest h4:nth-of-type(2){
+    margin-top: 3px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
  /* sidebar css */
 
  #right{
@@ -286,4 +408,36 @@ main{
     height: 60px;
     border-radius: 5px;
     margin-left: 10px;
+}
+
+
+@media screen and (max-width:1182px){
+    #grid-1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .grid-box{
+        margin: 30px;
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+   #right{
+       width: 35vw;
+   }
+}
+
+@media screen and (max-width:969px){
+    #right{
+      display: none;  
+    }
+   
+    .grid-box{
+        margin: 30px;
+        width: 50vw;
+        display: flex;
+        justify-content: space-between;
+    }
 }
