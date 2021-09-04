@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #0d1127;
+    background-color: #070130;
 }
 
 ul li{
@@ -16,7 +16,7 @@ ul li{
 
 
 nav{
-    background-color: #0d1127;
+    background-color: #070130;
     top: 0;
     width: 100vw;
     height: 100px;
@@ -28,7 +28,7 @@ nav{
 }
 
 #blur{
-    background-color: #0d1127;
+    background-color: #070130;
     opacity: 0.8;
     width: 100vw;
     height: 20px;
@@ -154,6 +154,78 @@ main{
      margin-left: 10px;
  }
 
+ .heading-1{
+     margin-top: 65px
+ }
+
+
+ /* carousel css starts here */
+
+.card {
+   position: absolute;
+   width: 30vw;
+   height: 20vw;
+   left: 0;
+   right: 0;
+   margin: auto;
+   transition: transform .4s ease;
+   margin-left: 200px;
+   margin-top: 25px;
+   cursor: pointer;
+ }
+ 
+ .container {
+   width: 30vw;
+   max-width: 800px;
+   max-height: 600px;
+   height: 20vw;
+   transform-style: preserve-3d;
+   display: flex;
+   justify-content: center;
+
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .cards {
+   position: relative;
+   width: 30vw;
+   height: 100%;
+   margin-bottom: 50px;
+ }
+ 
+ .container img {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+ }
+ 
+ #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+   transform: translatex(-40%) scale(.8);
+   opacity: .4;
+   z-index: 5;
+ }
+ 
+ #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+   transform: translatex(40%) scale(.8);
+   opacity: .4;
+   z-index: 5;
+ }
+ 
+ #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+   transform: translatex(0) scale(1);
+   opacity: 1;
+   z-index: 6;
+   
+   
+ }
+
+ .container img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+ 
+ /* carousel css ends here */
  #grid-1{
      display: grid;
      grid-template-columns: repeat(2,1fr);
@@ -352,7 +424,7 @@ main{
      margin-left: 10px;
     /* height: 1000px; */
     width: 25vw;
-    background-color: #0d1127;
+    background-color: #070130;
     /* border: 2px solid white; */
  }
 
@@ -440,4 +512,204 @@ main{
         display: flex;
         justify-content: space-between;
     }
+}
+
+.hide{
+	display: none; /*This class hides any div that it is applie to*/
+}
+
+
+
+/*Dropdown bar of latest release section*/
+#dropdown{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 50vw;
+}
+#dropdown-menu{
+	height:0px;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	font-family: sans-serif;
+	color: #4b5c5e;
+    font-weight: 400;
+	position: relative;
+	z-index: 1;
+	padding: 1rem;
+	display: none;
+}
+#dropdown-list{
+    display: none;
+	margin-bottom: 1rem;
+}
+#dropdown-list a{
+	text-decoration: none;
+	color : #4b5c5e;
+}
+#dropdown:hover #dropdown-menu{
+	height:125px;
+    width: 155px;
+	display: block;
+}
+#dropdown:hover #dropdown-list{
+	display: block;
+}
+
+
+/*Music Bar*/
+
+
+#music-bar{
+    display: block;
+	height: 100px;
+	width: 1500px;
+	position: fixed;
+	bottom: 0;
+	background-color: #2b2b2a;
+	opacity: 1;
+	color: white;
+	z-index: 15;
+}
+
+#music-icon{
+	height: 70px;
+	width: 70px;
+	margin-left: 2vw;
+	margin-top: 6px;
+	border:2px solid  white;
+	opacity: 1;
+}
+#music-icon img{
+	height: 70px;
+	width: 70px;
+	margin-left: 0;
+	margin-top: 0;
+	position: fixed;
+}
+#music-bar:target{
+	display: block; /*When play button is clicked music bar is displayed*/
+}
+#music-icon a{
+	position: fixed;
+	top:12vh;
+	left:98%;
+	color: white;
+}
+#music-title{
+	color: white;
+	font-family: sans-serif;
+	font-size:1rem;
+	margin-top: -3.5%;
+	margin-left: 7.5%;
+}
+#music-player-title-artist{
+	 color:lightgrey; 
+	 font-size:0.8rem;
+}
+#play-buttons{
+	margin-top: -2%;
+    margin-left: 34%;
+    font-size: 1.3rem;
+}
+#play-buttons i{
+	padding-right: 4%;
+}
+#progress-bar{
+	height:3px;
+	width:380px;
+	background-color: #1DB954;
+	margin-left: 460px;
+	margin-top:-1vh;
+	border-radius: 2px;
+}
+#circle{
+	position: relative;
+	top:-6px;
+	left:-1px;
+}
+#favourite{
+	margin-left: 5px;
+	display: inline;
+}
+#remove{
+	margin-left: 5px;
+   display: inline;
+}
+#queue{
+	display: inline;
+	margin-left: 67%;
+	position: relative;
+	bottom: 21%;
+}
+#volume{
+	display: inline;
+	margin-left: 70%;
+	position: relative;
+	bottom: 38%;
+}
+#progress-bar-volume{
+	height:3px;
+	width:10vw;
+	background-color: #1DB954;
+	position: fixed;
+	left: 1100px;
+	top:93.5vh;
+	border-radius: 2px;
+	display: inline;
+}
+
+#circle-volume{
+	position: relative;
+	top:-6px;
+	left:0%;
+}
+#start-time{
+	display: inline;
+	position: absolute;
+	 color: lightgrey;
+	font-family: sans-serif;
+	position: relative;
+	left:28%;
+	top:2.5%;
+	font-size: 0.8rem;
+}
+#end-time{
+	display: inline;
+	position: absolute;
+	 color: lightgrey;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	position: relative;
+	left:55%;
+	top:2.5%;
+}
+/*End of music bar*/
+
+@media screen and (max-width:876px){
+    footer{
+    display: none;
+}
+
+.container{
+    width: 10vw;
+}
+}
+
+@media screen and (max-width:536px){
+.card {
+   width: 30vw;
+   height: 20vw;
+   margin-left: 50%;
+ }
+ 
+ .container {
+   width: 30vw;
+   max-width: 800px;
+   max-height: 600px;
+   height: 20vw;
+ }
+
 }
