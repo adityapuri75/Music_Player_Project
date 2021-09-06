@@ -866,6 +866,8 @@ display: flex;
     justify-content: space-around;
 }
 
+/* media queries */
+
 @media screen and (max-width:915px){
     #artist-right p{
         display: none;
